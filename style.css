@@ -1,3 +1,16 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+.players{
+   display: flex;
+    width: 90%;
+    justify-content: space-between;
+    margin: 40px auto;
+}
+
 .board{
     display: grid;
     grid-template-columns: repeat(3, 70px);
@@ -11,10 +24,52 @@
     height: 100%;
 }
 
-.boxcase{
-    
-}
-
 .addborder {
     border: 1px solid red;
+}
+
+.xplayer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.App{
+    width: fit-content;
+    height: 100vh;
+    margin: 20px auto;
+}
+
+.head{
+    text-align: center;
+}
+
+.selected{
+    border: 1px solid salmon;
+}
+
+.final{
+    display: none;
+    flex-direction: column;
+    justify-content: end;
+    align-items:center;
+    left: 530px;
+    top: 120px;
+    position: absolute;
+    width: 15%;
+    height: 30%;
+    background-color: white;
+    border-radius: 10%;
+}
+
+.restart{
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.active{
+    display: flex;
+}
+
+.mess{
+    margin-bottom: 50px;
 }
